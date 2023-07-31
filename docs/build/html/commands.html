@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Commands</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=cb25574f" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=e031e9a9"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Setting up investment analysis" href="tutorial/setting-up-analysis.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="commands">
+<h1>Commands<a class="headerlink" href="#commands" title="Permalink to this heading">¶</a></h1>
+<p>The Makefile contains the central entry points for common tasks related to this project.</p>
+<section id="syncing-data-to-s3">
+<h2>Syncing data to S3<a class="headerlink" href="#syncing-data-to-s3" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><cite>make sync_data_to_s3</cite> will use <cite>aws s3 sync</cite> to recursively sync files in <cite>data/</cite> up to <cite>s3://[OPTIONAL] your-bucket-for-syncing-data (do not include ‘s3://’)/data/</cite>.</p></li>
+<li><p><cite>make sync_data_from_s3</cite> will use <cite>aws s3 sync</cite> to recursively sync files from <cite>s3://[OPTIONAL] your-bucket-for-syncing-data (do not include ‘s3://’)/data/</cite> to <cite>data/</cite>.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="index.html">
+    <img class="logo" src="_static/logo.jpeg" alt="Logo"/>
+    
+  </a>
+</p>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/terms-formula.html">Terms and formula</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/major-tasks.html">Major tasks in investment industry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial/setting-up-analysis.html">Setting up investment analysis</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Commands</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#syncing-data-to-s3">Syncing data to S3</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="tutorial/setting-up-analysis.html" title="previous chapter">Setting up investment analysis</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.1.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/commands.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
