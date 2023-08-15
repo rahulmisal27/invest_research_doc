@@ -4,27 +4,57 @@ Terms and formula
 
 Four-factor model:
 -------------------
-    - A mathematical formula to forecast expected returns based on the size, beta, valuation, and momentum of component assets in a portfolio
+    - A mathematical formula to forecast expected returns based on the size, beta, valuation, and momentum of component assets in a portfolio. 
+    
+        - E(Rp) = Rf + beta(Rm-Rf) + size + value + momentum
+    
+        E(Rp) - Expected return of portfolio
+        Rf - Risk-free rate
+        beta - Beta of portfolio
+        Rm - Market return
+        size - Size factor
+        value - Value factor
+        momentum - Momentum factor
 
 Three-factor model 
 -------------------
-    - A mathematical formula to forecast expected returns based on the size, beta, and valua- tion of component assets in a portfolio
+    - A mathematical formula to forecast expected returns based on the size, beta, and valuation of component assets in a portfolio.
+
+    - E(Rp) = Rf + beta(Rm-Rf) + size + value
 
 Expected risk 
 -------------------
-    - Projected standard deviation or variance of a portfolio or asset generally based on historical returns often with monthly or daily frequency
+    - Projected standard deviation or variance of a portfolio or asset generally based on historical returns often with monthly or daily frequency.
+    
+        - sigma(Rp) = sqrt(sum((Rp-E(Rp))^2)/(n-1))
+    
+        sigma(Rp) - Expected risk of portfolio
+        Rp - Return of portfolio
+        E(Rp) - Expected return of portfolio
+        n - Number of periods
 
 Expected return 
 -------------------
-    - Projected rate of return, usually calculated based on either historical returns or scenario analysis
+    - Projected rate of return, usually calculated based on either historical returns or scenario analysis.
+    
+        - E(Rp) = sum(Rp)/n
+    
+        E(Rp) - Expected return of portfolio
+        Rp - Return of portfolio
+        n - Number of periods
 
 Weights/allocations 
 -------------------
-    - Percentage of a portfolio by dollars invested held in various assets within the portfolio
+    - Percentage of a portfolio by dollars invested held in various assets within the portfolio.
+    
+        - w = market value of asset/total market value of portfolio
+    
+        w - Weight of asset
 
 variance 
 -------------------
-    - Statistical measure of risk computed by taking the returns of a portfolio or asset in each period minus the arithmetic mean return, divided by the number of periods less 1: ((Rp – E(Rp))/n-1), basis for var.s() formula in Excel
+    - Statistical measure of risk computed by taking the returns of a portfolio or asset in each period minus the arithmetic mean return, divided by the number of periods less 1: ((Rp – E(Rp))/n-1), basis for var.s() formula in Excel.
+
 
 Arithmetic mean 
 -------------------
@@ -32,7 +62,7 @@ Arithmetic mean
 
 geometric mean 
 -------------------
-    - The rate of growth in a number that occurs on average over time; for example, a rate of re- turn that is equal for all months over a year for a buy and hold investment: ((1+Rp)^n ) – 1, basis for geomean() formula in Excel
+    - The rate of growth in a number that occurs on average over time; for example, a rate of return that is equal for all months over a year for a buy and hold investment: ((1+Rp)^n ) – 1, basis for geomean() formula in Excel
 
 Standard deviation 
 -------------------
@@ -40,23 +70,28 @@ Standard deviation
 
 Sharpe ratio 
 -------------------
-    - Measure of relative performance success of a portfolio based on past returns after taking into account the risk-free rate; calculated as (Rp-Rf)/Sigma(Rp)
+    - Measure of relative performance success of a portfolio based on past returns after taking into account the risk-free rate.
+    
+    - sharpe ratio = (Rp-Rf)/Sigma(Rp)
 
 Sortino ratio 
 -------------------
-    - measure of relative performance success of a portfolio based on past returns after taking into account the minimum acceptable rate (MAR) of the investor demand; calculated as (Rp-MAR)/Sigma(Rp)
+    - measure of relative performance success of a portfolio based on past returns after taking into account the minimum acceptable rate (MAR) of the investor demand.
+    -  Sortino ratio = (Rp-MAR)/Sigma(Rp)
 
 Information ratio 
 -------------------
-    - Measure of relative performance success of a portfolio based on past returns after taking into account the market rate of return; calculated as (Rp-Rm)/Sigma(Rp)
+    - Measure of relative performance success of a portfolio based on past returns after taking into account the market rate of return.
+    - Information ratio = (Rp-Rm)/Sigma(Rp)
 
 Treynor measure 
 -------------------
-    - Measure of relative performance success of a portfolio based on past returns after taking into account the risk in the portfolio as defined by beta; calculated as (Rp-Rf)/beta of portfolio)
+    - Measure of relative performance success of a portfolio based on past returns after taking into account the risk in the portfolio as defined by beta.
+    - Treynor measure = (Rp-Rf)/beta of portfolio
 
 Beta 
 -------------------
-    - Measure of the degree of covariance between an asset and the market; usually calculated as the re- gression coefficient of an asset’s returns against the market
+    - Measure of the degree of covariance between an asset and the market; usually calculated as the regression coefficient of an asset’s returns against the market.
 
 VAR 
 -------------------

@@ -36,8 +36,21 @@
 <section id="four-factor-model">
 <h2>Four-factor model:<a class="headerlink" href="#four-factor-model" title="Permalink to this heading">¶</a></h2>
 <blockquote>
+<div><ul>
+<li><p>A mathematical formula to forecast expected returns based on the size, beta, valuation, and momentum of component assets in a portfolio.</p>
+<blockquote>
 <div><ul class="simple">
-<li><p>A mathematical formula to forecast expected returns based on the size, beta, valuation, and momentum of component assets in a portfolio</p></li>
+<li><p>E(Rp) = Rf + beta(Rm-Rf) + size + value + momentum</p></li>
+</ul>
+<p>E(Rp) - Expected return of portfolio
+Rf - Risk-free rate
+beta - Beta of portfolio
+Rm - Market return
+size - Size factor
+value - Value factor
+momentum - Momentum factor</p>
+</div></blockquote>
+</li>
 </ul>
 </div></blockquote>
 </section>
@@ -45,31 +58,58 @@
 <h2>Three-factor model<a class="headerlink" href="#three-factor-model" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>A mathematical formula to forecast expected returns based on the size, beta, and valua- tion of component assets in a portfolio</p></li>
+<li><p>A mathematical formula to forecast expected returns based on the size, beta, and valuation of component assets in a portfolio.</p></li>
+<li><p>E(Rp) = Rf + beta(Rm-Rf) + size + value</p></li>
 </ul>
 </div></blockquote>
 </section>
 <section id="expected-risk">
 <h2>Expected risk<a class="headerlink" href="#expected-risk" title="Permalink to this heading">¶</a></h2>
 <blockquote>
+<div><ul>
+<li><p>Projected standard deviation or variance of a portfolio or asset generally based on historical returns often with monthly or daily frequency.</p>
+<blockquote>
 <div><ul class="simple">
-<li><p>Projected standard deviation or variance of a portfolio or asset generally based on historical returns often with monthly or daily frequency</p></li>
+<li><p>sigma(Rp) = sqrt(sum((Rp-E(Rp))^2)/(n-1))</p></li>
+</ul>
+<p>sigma(Rp) - Expected risk of portfolio
+Rp - Return of portfolio
+E(Rp) - Expected return of portfolio
+n - Number of periods</p>
+</div></blockquote>
+</li>
 </ul>
 </div></blockquote>
 </section>
 <section id="expected-return">
 <h2>Expected return<a class="headerlink" href="#expected-return" title="Permalink to this heading">¶</a></h2>
 <blockquote>
+<div><ul>
+<li><p>Projected rate of return, usually calculated based on either historical returns or scenario analysis.</p>
+<blockquote>
 <div><ul class="simple">
-<li><p>Projected rate of return, usually calculated based on either historical returns or scenario analysis</p></li>
+<li><p>E(Rp) = sum(Rp)/n</p></li>
+</ul>
+<p>E(Rp) - Expected return of portfolio
+Rp - Return of portfolio
+n - Number of periods</p>
+</div></blockquote>
+</li>
 </ul>
 </div></blockquote>
 </section>
 <section id="weights-allocations">
 <h2>Weights/allocations<a class="headerlink" href="#weights-allocations" title="Permalink to this heading">¶</a></h2>
 <blockquote>
+<div><ul>
+<li><p>Percentage of a portfolio by dollars invested held in various assets within the portfolio.</p>
+<blockquote>
 <div><ul class="simple">
-<li><p>Percentage of a portfolio by dollars invested held in various assets within the portfolio</p></li>
+<li><p>w = market value of asset/total market value of portfolio</p></li>
+</ul>
+<p>w - Weight of asset</p>
+</div></blockquote>
+</li>
 </ul>
 </div></blockquote>
 </section>
@@ -77,7 +117,7 @@
 <h2>variance<a class="headerlink" href="#variance" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Statistical measure of risk computed by taking the returns of a portfolio or asset in each period minus the arithmetic mean return, divided by the number of periods less 1: ((Rp – E(Rp))/n-1), basis for var.s() formula in Excel</p></li>
+<li><p>Statistical measure of risk computed by taking the returns of a portfolio or asset in each period minus the arithmetic mean return, divided by the number of periods less 1: ((Rp – E(Rp))/n-1), basis for var.s() formula in Excel.</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -93,7 +133,7 @@
 <h2>geometric mean<a class="headerlink" href="#geometric-mean" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>The rate of growth in a number that occurs on average over time; for example, a rate of re- turn that is equal for all months over a year for a buy and hold investment: ((1+Rp)^n ) – 1, basis for geomean() formula in Excel</p></li>
+<li><p>The rate of growth in a number that occurs on average over time; for example, a rate of return that is equal for all months over a year for a buy and hold investment: ((1+Rp)^n ) – 1, basis for geomean() formula in Excel</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -109,7 +149,8 @@
 <h2>Sharpe ratio<a class="headerlink" href="#sharpe-ratio" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Measure of relative performance success of a portfolio based on past returns after taking into account the risk-free rate; calculated as (Rp-Rf)/Sigma(Rp)</p></li>
+<li><p>Measure of relative performance success of a portfolio based on past returns after taking into account the risk-free rate.</p></li>
+<li><p>sharpe ratio = (Rp-Rf)/Sigma(Rp)</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -117,7 +158,8 @@
 <h2>Sortino ratio<a class="headerlink" href="#sortino-ratio" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>measure of relative performance success of a portfolio based on past returns after taking into account the minimum acceptable rate (MAR) of the investor demand; calculated as (Rp-MAR)/Sigma(Rp)</p></li>
+<li><p>measure of relative performance success of a portfolio based on past returns after taking into account the minimum acceptable rate (MAR) of the investor demand.</p></li>
+<li><p>Sortino ratio = (Rp-MAR)/Sigma(Rp)</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -125,7 +167,8 @@
 <h2>Information ratio<a class="headerlink" href="#information-ratio" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Measure of relative performance success of a portfolio based on past returns after taking into account the market rate of return; calculated as (Rp-Rm)/Sigma(Rp)</p></li>
+<li><p>Measure of relative performance success of a portfolio based on past returns after taking into account the market rate of return.</p></li>
+<li><p>Information ratio = (Rp-Rm)/Sigma(Rp)</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -133,7 +176,8 @@
 <h2>Treynor measure<a class="headerlink" href="#treynor-measure" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Measure of relative performance success of a portfolio based on past returns after taking into account the risk in the portfolio as defined by beta; calculated as (Rp-Rf)/beta of portfolio)</p></li>
+<li><p>Measure of relative performance success of a portfolio based on past returns after taking into account the risk in the portfolio as defined by beta.</p></li>
+<li><p>Treynor measure = (Rp-Rf)/beta of portfolio</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -141,7 +185,7 @@
 <h2>Beta<a class="headerlink" href="#beta" title="Permalink to this heading">¶</a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Measure of the degree of covariance between an asset and the market; usually calculated as the re- gression coefficient of an asset’s returns against the market</p></li>
+<li><p>Measure of the degree of covariance between an asset and the market; usually calculated as the regression coefficient of an asset’s returns against the market.</p></li>
 </ul>
 </div></blockquote>
 </section>
